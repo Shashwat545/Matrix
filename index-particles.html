@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Count - Particles</title>
+    <title>Matrix - NASA APOD</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -23,6 +23,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="js/query_api.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -52,17 +53,14 @@
             <div class="row home-content__main">
 
                 <div class="col-eight home-content__text pull-right">
-                    <h3>Welcome to Count</h3>
+                    <h3>Welcome to Matrix</h3>
 
-                    <h1>
-                    We are currently working <br>
-                    on a new super awesome <br> website.
+                    <h1 id="title">
                     </h1>
 
-                    <p>
-                    Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. 
-                    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
-                    Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                    <img id="pic" src="" alt="NASA Picture Of The Day" width="600px">
+
+                    <p id="explanation">
                     </p>
 
                     <div class="home-content__subscribe">
@@ -75,26 +73,19 @@
                 </div>  <!-- end home-content__text -->
 
                 <div class="col-four home-content__counter">
-                    <h3>Launching In</h3>
+                    <h3>Date</h3>
 
                     <div class="home-content__clock">
                         <div class="top">
                             <div class="time days">
-                                325
-                                <span>Days</span>
+                                <p id="day" style="display:inline"></p><span>Day</span>
                             </div>
                         </div>    
                         <div class="time hours">
-                            09
-                            <span>H</span>
+                            <p id="month" style="display:inline"></p><span>M</span>
                         </div>
                         <div class="time minutes">
-                            54
-                            <span>M</span>
-                        </div>
-                        <div class="time seconds">
-                            30
-                            <span>S</span>
+                            <p id="year" style="display:inline"></p><span>Y</span>
                         </div>
                     </div>  <!-- end home-content__clock -->
                 </div>  <!-- end home-content__counter -->
@@ -120,8 +111,8 @@
             </ul> <!-- end home-social -->
 
             <div class="row home-copyright">
-                <span>Copyright Count 2018</span> 
-                <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
+                <span>Matrix 2022</span> 
+                <span>Design by <a href="https://github.com/Shashwat545">Shashwat Singh</a></span>
             </div> <!-- end home-copyright -->
 
 
