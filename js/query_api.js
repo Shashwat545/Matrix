@@ -12,7 +12,7 @@ req.addEventListener("load", function(){
     document.getElementById("year").textContent = response.date.substring(0,4);
     document.getElementById("month").textContent = response.date.substring(5,7);
     document.getElementById("day").textContent = response.date.substring(8,10);
-    document.getElementById("pic").src = response.hdurl;
+    document.getElementById("pic").src = response.url;
     document.getElementById("explanation").textContent = response.explanation;
   }
 })
