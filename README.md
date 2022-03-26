@@ -7,3 +7,5 @@ Matrix is supposed to be a collection of small projects made by me over time. As
 
 # Overall Deplyoment:
 [Matrix](https://shashwat545.github.io/Matrix/)
+
+## Give this project a star :star: if you found it interesting
